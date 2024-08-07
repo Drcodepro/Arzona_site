@@ -42,7 +42,7 @@
     width: 100%;
     border: none; 
     height: 0.05rem; 
-    background: radial-gradient(circle, rgb(63, 95, 255) 18%, rgb(9, 19, 66) 100%);
+    background: radial-gradient(circle,rgb(141, 55, 226) 18%, rgba(41, 0, 82, 0.621) 100%);
 }
 
 .nav_navigation {
@@ -190,7 +190,7 @@ display: none;
         justify-content: space-evenly;
         gap: 0.3rem;
         background-color: rgba(0, 0, 0, 0.881); 
-        border: solid 1px rgb(52, 89, 255);
+        border: solid 1px rgb(141, 55, 226);
         border-top-left-radius: 1rem;
         border-bottom-left-radius: 1rem;
         z-index: 99;
