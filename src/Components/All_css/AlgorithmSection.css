@@ -88,14 +88,26 @@ color: white;
     transition: transform 1s;
     color: white;
     cursor: pointer;
-    opacity: 0;
-    scale: 0;
 
     &:hover {
         transform: rotateY(180deg);
     }
   }
 
+
+  .Algo_main_container .front, .Algo_main_container .back {
+    position: absolute;
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    
+    opacity: 0;
+    scale: 0;
+  }
+
+  
   .algo_box_animation{
     animation-name: box_animation;
     animation-duration: 0.4s;
@@ -108,16 +120,6 @@ color: white;
         scale: 1;
         opacity: 1;
     }
-  }
-
-
-  .Algo_main_container .front, .Algo_main_container .back {
-    position: absolute;
-    border-radius: 1rem;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    overflow: hidden;
   }
 
   .Algo_main_container .front {

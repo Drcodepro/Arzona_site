@@ -14,8 +14,11 @@ const AlgorithSection = () => {
         });
       }, { threshold: 0.1 });
     
-      const tokenomicPoints = document.querySelectorAll(".Algo_main_container .box");
-      tokenomicPoints.forEach((point) => observer.observe(point));
+      const tokenomicPoints_back = document.querySelectorAll(".Algo_main_container .back");
+      const tokenomicPoints_front = document.querySelectorAll(".Algo_main_container .front");
+      tokenomicPoints_front.forEach((point) => observer.observe(point));
+      tokenomicPoints_back.forEach((point) => observer.observe(point));
+
     
       return () => {
         observer.disconnect();
