@@ -1,0 +1,235 @@
+.nav_container{
+    position:fixed;
+    top: 0;
+    left: 0;
+    padding:1rem 2rem;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.26);
+    backdrop-filter: blur(10px);
+    color: white;
+
+    box-shadow:0 1px 15px 1px #9935ab8a ;
+}
+
+.nav_container .Arzona_logo{
+    width:120px;
+}
+
+.nav_container a{
+    &:active{
+        color: rgb(255, 49, 49);
+    }
+    text-decoration: none;
+    color: white;
+}
+
+.site_name_nav{
+    font-weight: 400;
+    margin: 0;
+}
+
+.nav_navigation_container{
+    display: flex;
+    gap: 2rem;
+}
+
+.nav_navigation_container hr{
+    display: none;
+    width: 100%;
+    border: none; 
+    height: 0.05rem; 
+    background: radial-gradient(circle, rgb(255, 63, 63) 18%, rgb(66, 9, 9) 100%);
+}
+
+.nav_navigation {
+    cursor: pointer; 
+    &:hover {
+        transform: translateY(-3px) scale(0.9);
+
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Button */
+
+.nav_container{
+    z-index: 99;
+}
+
+.SignIN_btn {
+    width: fit-content;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5rem 2rem;
+    position: relative;
+    border-radius: 0.3rem;
+    background: rgb(0,0,0);
+    border: none;
+
+    &:hover{
+    cursor: pointer;
+    background: radial-gradient(circle, rgba(90,93,255,1) 0%, rgba(53,57,248,1) 23%, rgba(20,26,255,1) 52%, rgba(0,6,234,1) 75%, rgba(0,3,126,1) 100%);
+    }
+  }
+
+
+  
+   .SignIN_btn:before,  .SignIN_btn:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 0.3rem;
+    background: linear-gradient(45deg, rgb(65, 112, 232),rgba(235, 6, 171, 1),rgba(12, 29, 33, 1));
+    background-size: 200%;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    z-index: -1;
+    animation: steam 10s linear infinite;
+  }
+
+  
+  @keyframes steam {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+/* button style end */
+
+
+
+.nav_container .toggle_nav_button{
+display: none;
+}
+
+
+/* tab responsive  */
+
+@media (max-width:980px) {
+    .nav_navigation_container{
+        gap: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .nav_container .SignIN_btn{
+        padding-left: 1rem;
+        padding-right:1rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:800px) {
+    .nav_navigation_container{
+        gap: 1rem;
+        font-size: 0.6rem;
+    }
+}
+
+
+
+
+
+/* mobile responsive  */
+
+@media (max-width:690px) {
+    .nav_container{
+        padding:0.5rem 2rem;
+    }
+    .nav_navigation {
+        width: 100%;
+        text-align: center;
+       
+    }
+
+    .nav_navigation_container hr{
+        display:block;
+    }
+
+    .nav_container .toggle_nav_button{
+        display: block;  
+    }
+
+    .nav_container .SignIN_btn{
+        display: none;
+    }
+
+    .navIsHidden{
+        display: none;
+        left:100%;
+    }
+    .nav_navigation_container{
+        position: absolute;
+        top:100%;
+        right:0%;
+        height: fit-content;
+        width:90%;
+        font-size: 0.8rem;
+        padding-left: 0.5rem;
+        padding-right:2rem;
+        padding-top: 0.5rem;
+        padding-bottom:0.5rem;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items:start;
+        gap: 0.3rem;
+        background-color: rgba(0, 0, 0, 0.954);
+        border: solid 2px rgb(255, 52, 52);
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        z-index: 99;
+    }  
+
+}
+
+@media (max-width:516px) {
+    .nav_container{
+        padding:0.3rem 1rem;
+    }
+
+    .nav_container .Arzona_logo{
+        width:80px;
+    }
+
+
+    .nav_container .SignIN_btn{
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+        padding-top: 0.1rem;
+        padding-bottom: 0.1rem;
+        font-size: 0.6rem;
+    }
+}
+
+
+@media (max-width:350px) {
+    .nav_container img{
+        width:3rem;
+    }
+    .nav_container .SignIN_btn{
+        font-size: 0.4rem;
+        font-weight: 600;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+        padding-top: 0.1rem;
+        padding-bottom: 0.1rem;
+    }
+}

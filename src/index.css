@@ -1,0 +1,19 @@
+
+
+*{
+  font-family:system-ui;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+}
+@font-face {
+  font-family: 'SquidSFUITextRegular';
+  src: local("SquidSFUITextRegular"),
+  url('../public/fonts/SFUIText-Regular.ttf')  format('truetype');
+  font-style:   normal;
+  font-weight:  400;
+}
