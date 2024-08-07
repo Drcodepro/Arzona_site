@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import PancakeSwap_logo from "../assets/icons/PancakeSwap_logo.png";
 import Certik_logo from "../assets/icons/Certik_logo.png";
 import CoinGecko_logo from "../assets/icons/CoinGecko_logo.png";
@@ -60,11 +60,16 @@ const HeroSection = () => {
     
             <div className="list">
     
-                <div className="item i1"><img src={PancakeSwap_logo} alt=""/></div>
+                <div className="item i1" ><img src={PancakeSwap_logo} alt=""/></div>
                 <div className="item i2" ><img src={Certik_logo} alt=""/></div>
                 <div className="item i3" ><img src={CoinGecko_logo} alt=""/></div>
                 <div className="item i4" ><img src={PancakeSwap_logo} alt=""/></div>
                 <div className="item i5" ><img src={Certik_logo} alt=""/></div>
+                <div className="item i6" ><img src={CoinGecko_logo} alt=""/></div>
+                <div className="item i7" ><img src={PancakeSwap_logo} alt=""/></div>
+                <div className="item i8" ><img src={Certik_logo} alt=""/></div>
+                <div className="item i9" ><img src={CoinGecko_logo} alt=""/></div>
+               
     
             </div>
         </div> 
