@@ -1,6 +1,5 @@
 import "./All_css/TokenomicSection.css";
 import tokenomic_graph from "../assets/images/Arizona_Tokenomic_Img.webp";
-// import useIntersectionObserver from "./InterSection_observer";
 import { useEffect, useState } from "react";
 
 export default function Tokenomics() {

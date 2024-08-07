@@ -260,6 +260,10 @@
         font-weight: 500;
         text-shadow: -2px 0 0px rgb(255, 255, 255);
     }
+
+    .Tokenomic_section_container .tokenomic_info_container div{
+        transform: translateX(100px) scaleX(0);
+    }
 }
 
 

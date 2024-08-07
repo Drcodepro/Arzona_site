@@ -1,8 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./All_css/AlgorithmSection.css";
-
-
 const AlgorithSection = () => {
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("algo_box_animation"); 
+          }
+         else{
+            entry.target.classList.remove("algo_box_animation"); 
+          }
+        });
+      }, { threshold: 0.1 });
+    
+      const tokenomicPoints = document.querySelectorAll(".Algo_main_container .box");
+      tokenomicPoints.forEach((point) => observer.observe(point));
+    
+      return () => {
+        observer.disconnect();
+      };
+    }, []);
 
   return (
     <div className="AlgorithmSection_page">

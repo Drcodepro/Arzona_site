@@ -88,10 +88,26 @@ color: white;
     transition: transform 1s;
     color: white;
     cursor: pointer;
+    opacity: 0;
+    scale: 0;
 
     &:hover {
         transform: rotateY(180deg);
-      }
+    }
+  }
+
+  .algo_box_animation{
+    animation-name: box_animation;
+    animation-duration: 0.4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes box_animation {
+    to{
+        scale: 1;
+        opacity: 1;
+    }
   }
 
 
