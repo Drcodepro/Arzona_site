@@ -303,6 +303,8 @@
     
     .Tokenomic_section_container .tokenomic_info_container div{
         width: 80%;
+        transform: translateX(100px) scaleX(0);
+        opacity: 0;
     }
 
     .Tokenomic_section_container .tokenomic_info_container div p{
