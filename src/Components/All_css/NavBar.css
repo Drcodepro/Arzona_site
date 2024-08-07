@@ -202,11 +202,11 @@ display: none;
 
 @media (max-width:516px) {
     .nav_container{
-        padding:0.3rem 1rem;
+        padding:1rem 1rem;
     }
 
     .nav_container .Arzona_logo{
-        width:80px;
+        width:90px;
     }
 
 
@@ -221,9 +221,6 @@ display: none;
 
 
 @media (max-width:350px) {
-    .nav_container img{
-        width:3rem;
-    }
     .nav_container .SignIN_btn{
         font-size: 0.4rem;
         font-weight: 600;
