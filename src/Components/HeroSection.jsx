@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import PancakeSwap_logo from "../assets/icons/PancakeSwap_logo.png";
 import Certik_logo from "../assets/icons/Certik_logo.png";
 import CoinGecko_logo from "../assets/icons/CoinGecko_logo.png";
+import bg_video from "../assets/videos/hero_backg.mp4";
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 
@@ -44,6 +45,7 @@ const HeroSection = () => {
 
   return (
     <div className='HeroSection_page' id="heroSection">
+        <video src={bg_video} className='heropage_bg' autoPlay muted loop></video>
         <div className='HeroSection_info_contaienr'>
             <div className='HeroSection_discription_container'>
                 <p className='top_p'>Welcome to Arzona Chain</p>
