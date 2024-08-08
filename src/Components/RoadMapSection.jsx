@@ -96,7 +96,7 @@ const RoadMapSection = () => {
 
 
   return (
-    <div className='RoadMapSection_page'>
+    <div className='RoadMapSection_page' id="roadMapSection">
       <div className='heading_container'>
         <h1><span>Arzona</span> Roadmap: Development Milestones</h1>
         <p>The ARZONA roadmap outlines key development phases, including token launch, staking implementation, security audits, and community engagement initiatives</p>

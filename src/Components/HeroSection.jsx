@@ -43,7 +43,7 @@ const HeroSection = () => {
     })
 
   return (
-    <div className='HeroSection_page'>
+    <div className='HeroSection_page' id="heroSection">
         <div className='HeroSection_info_contaienr'>
             <div className='HeroSection_discription_container'>
                 <p className='top_p'>Welcome to Arzona Chain</p>

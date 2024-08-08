@@ -21,7 +21,7 @@
 
 .nav_container a{
     &:active{
-        color: rgb(255, 49, 49);
+        color: rgb(114, 49, 255);
     }
     text-decoration: none;
     color: white;

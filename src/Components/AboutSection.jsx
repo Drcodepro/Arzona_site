@@ -59,7 +59,7 @@ const AboutSection = () => {
   })
   
   return (
-    <div className='AboutSection_page'>
+    <div className='AboutSection_page' id="aboutSection">
       
       <div className='About_section'>
           <div className='about_img_box'>

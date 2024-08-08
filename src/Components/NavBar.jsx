@@ -52,7 +52,7 @@ export default function NavBar(){
 
         <div  className={`${isvisible  ?  "none" :"navIsHidden "} nav_navigation_container`}>
            
-               <a href="#navBar"><div className="nav_navigation flex" >Home</div></a>
+               <a href="#heroSection"><div className="nav_navigation flex" >Home</div></a>
 
                <hr />
 
@@ -60,19 +60,19 @@ export default function NavBar(){
 
                <hr />
 
-               <a href="#howWorkSection"><div className="nav_navigation flex" >How Work</div></a>
+               <a href="#Tokenomics_Section"><div className="nav_navigation flex" >Tokenomic</div></a>
              
                <hr />
 
-               <a href="#upCommingSection"><div className="nav_navigation flex" >Up Comming</div></a>
+               <a href="#roadMapSection"><div className="nav_navigation flex" >RoadMap</div></a>
                
+               {/* <hr />
+
+               <a href="#whyChooseSection"><div className="nav_navigation flex" >Why To Choose</div></a> */}
+
                <hr />
 
-               <a href="#whyChooseSection"><div className="nav_navigation flex" >Why To Choose</div></a>
-
-               <hr />
-
-                <a href="#footer"><div className="nav_navigation"  >Contact</div></a>
+                <a href="#footer"><div className="nav_navigation"  >Contact Us</div></a>
                 
             </div>
             <div className="nav_btn_container">
