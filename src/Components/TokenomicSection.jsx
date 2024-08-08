@@ -1,6 +1,6 @@
 import "./All_css/TokenomicSection.css";
 import tokenomic_graph from "../assets/images/Arizona_Tokenomic_Img.webp";
-import bscScan_logo from "../assets/icons/bscScan_logo.png"
+import polygonscan_logo from "../assets/icons/polygonscan_logo.png"
 import { useEffect, useState } from "react";
 
 export default function Tokenomics() {
@@ -12,7 +12,7 @@ export default function Tokenomics() {
   //   });
 
   const [copied, setCopied] = useState(false);
-  const text = "0x9a1C69D8277489B74C8C93671Dd1c1d17Dda802A";
+  const text = "0xA642a8A49121De423A49edAd019647cE0405DDD1";
   
 
   const handleCopy = () => {
@@ -102,7 +102,7 @@ export default function Tokenomics() {
       {/*  contract address section */}
       <div className="copy_contract_container">
         <h1>Contract Address</h1>
-        <p>0x9a1C69D8277489B74C8C93671Dd1c1d17Dda802A</p>
+        <p>0xA642a8A49121De423A49edAd019647cE0405DDD1</p>
 
         <div className="contract_btn_container">
         <button onClick={handleCopy}>
@@ -111,10 +111,10 @@ export default function Tokenomics() {
           </div>
         </button>
 
-        <a href="">
+        <a href="https://polygonscan.com/address/0xA642a8A49121De423A49edAd019647cE0405DDD1">
           <button>
             <div className="btn_content">
-              <img src={bscScan_logo} alt="logo" className="bsc_logo" />BscScan
+              <img src={polygonscan_logo} alt="logo" className="polygonscan_logo" />polygonscan
             </div>
           </button>
         </a>
