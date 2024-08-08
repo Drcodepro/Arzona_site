@@ -249,6 +249,12 @@
 
 
 @media (max-width:500px) {
+
+    .HeroSection_page{
+        height: fit-content;
+        padding-bottom: 2rem;
+        padding-top: 7rem;
+    }
     .HeroSection_info_contaienr .Buy_btn {
         font-size: 0.8rem;
     }
