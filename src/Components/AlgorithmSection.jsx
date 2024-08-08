@@ -23,7 +23,7 @@ const AlgorithSection = () => {
       // flep animation on mouse click
       
   const algo_box = document.querySelectorAll(".Algo_main_container .box");
-
+  
     algo_box.forEach((box)=>{
 
       box.addEventListener("mouseover",()=>{
@@ -33,6 +33,8 @@ const AlgorithSection = () => {
 
         box.style.transform = "rotateY(180deg)";      })
     })
+
+    
   
     return () => {
       observer.disconnect();

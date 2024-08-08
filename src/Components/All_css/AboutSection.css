@@ -103,7 +103,8 @@
 
     &:hover{
        cursor: pointer;
-       background: radial-gradient(circle, rgba(90,93,255,1) 0%, rgba(53,57,248,1) 23%, rgba(20,26,255,1) 52%, rgba(0,6,234,1) 75%, rgba(0,3,126,1) 100%);
+       background-color: #21D4FD;
+       background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
 
     }
   }

@@ -28,7 +28,7 @@ const Footer = () => {
           <h2>Use Case</h2>
           <a href=""><p>Ecosystem</p></a>
           <a href=""><p>Farm Design</p></a>
-          <a href=""><p>AI Mining System in Future</p></a>
+          <a href=""><p>optional</p></a>
         </div>
 
         <div className="Important">
@@ -43,7 +43,6 @@ const Footer = () => {
           <a href=""><p>About Us</p></a>
           <a href=""><p>Career</p></a>
           <a href=""><p>FAQs</p></a>
-          <a href=""><p>Teams</p></a>
           <a href=""><p>Contact Us</p></a>
 
         </div>

@@ -1,18 +1,32 @@
 
 .Home_footer_section{
+    position: relative;
     display: flex;
     height: fit-content;
     flex-direction: column;
     width: 100%;
     box-sizing: border-box;
-    background-color: #191919;
     padding-top: 2rem;
     color: white;
+    background: transparent;
     padding-left: 0rem;
     padding-right: 0rem;
     padding-bottom: 0.5rem;
-    background-image: url(../assets/Image/Footer_bg.svg);
-    background-size: cover;
+    /* border-top: 1px solid rgba(173, 173, 173, 0.336);  */
+
+    &:before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        left: 0%;
+        background-image: url(../../assets/images/footer_bg.jpg);
+        background-size: cover;
+        background-position: center;
+        opacity: 0.2;
+        z-index: -2;
+    }
 }
 
 .Home_footer_section .footer_mainContent{
@@ -24,7 +38,7 @@
     padding-bottom: 1rem;
     padding-left: 3rem;
     padding-right: 3rem;
-    border-bottom: 1px solid rgba(173, 173, 173, 0.478);
+    border-bottom: 1px solid rgba(173, 173, 173, 0.336);
 
 }
 
@@ -34,9 +48,9 @@
     width: 30%;
 }
 .Home_footer_section .Home_footer_info .footer_info{
-    font-size:0.9rem;  
+    font-size:1rem;  
     font-weight: 350;
-    color: rgb(163, 163, 163);
+    color: rgb(229, 229, 229);
     margin-top: 0;
     text-align: start;
     width:100%;
@@ -62,8 +76,8 @@
 
 
 .Home_footer_section h2{
-    font-size: 1.1rem;
-    font-weight: 400;
+    font-size: 1.3rem;
+    font-weight: 500;
     color: rgb(255, 255, 255);
     /* background: linear-gradient(90deg, rgb(169, 255, 248) 1%, rgb(174, 52, 255) 60%);
    background-size: contain;
@@ -75,9 +89,9 @@
 
 
 .Important p{
-    font-size:0.9rem;  
+    font-size:1rem;  
     font-weight: 350;
-    color: rgb(163, 163, 163);  
+    color:  rgb(229, 229, 229);
     margin-bottom: 0.3rem;
     padding-bottom: 0;
     width: fit-content;
@@ -97,7 +111,7 @@
     gap:2rem;
     padding: 1.5rem 0;
     align-self: center;
-    border-bottom: 1px solid rgba(173, 173, 173, 0.478);
+    border-bottom: 1px solid rgba(173, 173, 173, 0.336);
 }
 
 
@@ -128,9 +142,9 @@ padding-right:0.5remrem;
 }
 
 .plicy_container p{
-    font-size:0.9rem;  
+    font-size:1rem;  
     font-weight: 350;
-    color: rgb(163, 163, 163);  
+    color:  rgb(229, 229, 229);
     width: fit-content;
     text-align: start;
 }
@@ -143,7 +157,7 @@ padding-right:0.5remrem;
 width: 100%;
 font-size: 0.8rem;  
 font-weight: 400;
-color: rgb(163, 163, 163);
+color: rgb(229, 229, 229);
 display: flex;
 justify-content:center;
 align-items:center;

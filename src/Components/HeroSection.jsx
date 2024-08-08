@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import PancakeSwap_logo from "../assets/icons/PancakeSwap_logo.png";
 import Certik_logo from "../assets/icons/Certik_logo.png";
 import CoinGecko_logo from "../assets/icons/CoinGecko_logo.png";
-import bg_video from "../assets/videos/hero_backg.mp4";
+import bg_video from "../assets/videos/hero_backg.webm";
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 

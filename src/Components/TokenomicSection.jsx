@@ -107,7 +107,7 @@ export default function Tokenomics() {
         <div className="contract_btn_container">
         <button onClick={handleCopy}>
           <div className="btn_content">
-            Copy <i className="fa-regular fa-copy"></i>
+            Copy Adress <i className="fa-regular fa-copy fa-lg"></i>
           </div>
         </button>
 
