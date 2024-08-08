@@ -196,11 +196,11 @@ margin-bottom: 1rem;
 
     .contact_us{
         flex-direction: column;
-        gap:0rem;
+        gap:1rem;
         padding:0.5rem 0;
     }
     .contact_us .social_media_icons{
-        gap: 0.5rem;
+        gap: 0.7rem;
     }
 
     .contact_us .social_media_icons img{
