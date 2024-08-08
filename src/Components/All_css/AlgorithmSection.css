@@ -88,10 +88,6 @@ color: white;
     transition: transform 1s;
     color: white;
     cursor: pointer;
-
-    &:hover {
-        transform: rotateY(180deg);
-    }
   }
 
 

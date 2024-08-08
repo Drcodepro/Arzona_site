@@ -19,11 +19,26 @@ const AlgorithSection = () => {
       tokenomicPoints_front.forEach((point) => observer.observe(point));
       tokenomicPoints_back.forEach((point) => observer.observe(point));
 
-    
-      return () => {
-        observer.disconnect();
-      };
-    }, []);
+
+      // flep animation on mouse click
+      
+  const algo_box = document.querySelectorAll(".Algo_main_container .box");
+
+    algo_box.forEach((box)=>{
+
+      box.addEventListener("mouseover",()=>{
+        algo_box.forEach((otherBox) => {
+          otherBox.style.transform = "rotateY(0deg)";
+        });
+
+        box.style.transform = "rotateY(180deg)";      })
+    })
+  
+    return () => {
+      observer.disconnect();
+    };
+
+  }, []);
 
   return (
     <div className="AlgorithmSection_page">
