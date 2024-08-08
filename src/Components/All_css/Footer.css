@@ -103,7 +103,13 @@
 
 .contact_us .social_media_icons{
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 0.5rem;
+}
+
+.Home_footer_section .contact_us h2{
+    margin-bottom: 0;
 }
 .contact_us .social_media_icons img{
     width: 2rem;

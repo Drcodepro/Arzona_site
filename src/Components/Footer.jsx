@@ -2,11 +2,11 @@ import React from 'react';
 import "./All_css/Footer.css";
 import arzona_logo from "../assets/icons/arzona_logo.svg";
 
-import insta_icon from "../assets/icons/insta_icon_0.png";
-import facebook_icon from "../assets/icons/facebook_icon_0.png";
-import telegram_icon from "../assets/icons/telegram_icon_0.png";
-import gmail_icon from "../assets/icons/gmail_icon_0.png";
-import twitter_icon from "../assets/icons/twitter_icon_0.png";
+import insta_icon from "../assets/icons/instagram_l.png";
+import facebook_icon from "../assets/icons/facebook_l.png";
+import telegram_icon from "../assets/icons/telegram_l.png";
+import gmail_icon from "../assets/icons/gmail_l.png";
+import twitter_icon from "../assets/icons/twitter_l.png";
 
 
 
