@@ -136,6 +136,7 @@
 /* contract address section style */
 
 .copy_contract_container{
+    position: relative;
     margin-top: 4rem;
     width:90%;
     padding: 1rem;
@@ -167,8 +168,24 @@
 
 /* copy btn style */
 
+.copy_contract_container .contract_btn_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.copy_contract_container .btn_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .copy_contract_container button {
     width: fit-content;
+    height: 3rem;
     color: white;
     font-size: 1rem;
     font-weight: 700;
@@ -179,7 +196,7 @@
     border: none;    
 
     &:hover{
-        scale:1.1;
+        background: radial-gradient(circle, rgba(90,93,255,1) 0%, rgba(53,57,248,1) 23%, rgba(20,26,255,1) 52%, rgba(0,6,234,1) 75%, rgba(0,3,126,1) 100%);
     }
   }
 
@@ -212,8 +229,31 @@
     }
   }
 
+  .bsc_logo{
+    width: 1.5rem;
+    height: auto;
+  }
+
 /* contract address end style */
 
+.copy_contract_container .copy_msg{
+    position: absolute;
+    top: 93%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+}
+
+.copy_msg_show{
+    animation: copy_msg 1s linear 0.2s 1;
+}
+@keyframes copy_msg{
+    100%{
+        opacity: 1;
+        top: 100%;
+    }
+}
 
 
 
@@ -321,6 +361,7 @@
     /* contract address style */
 
     .copy_contract_container button {
+        height: 2.2rem;
         font-size: 0.8rem;
         font-weight: 700;
         padding: 0.3rem 0.5rem 0.5rem 0.5rem;
