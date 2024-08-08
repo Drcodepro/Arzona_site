@@ -195,6 +195,12 @@ margin-bottom: 1rem;
 
 @media (max-width:600px){
 
+    .Home_footer_section{
+        &:before{
+            background-image: url(../../assets/images/footer_bg_mob.jpg);
+        }
+    }
+
     .Home_footer_section .footer_mainContent{
         display: flex;
         align-items: start;
