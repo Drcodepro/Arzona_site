@@ -370,6 +370,8 @@
 
     .copy_contract_container{
         width:98%;
+        box-shadow: none;
+        background: none;
     }
     .copy_contract_container h1{
         font-size: 1.5rem;
