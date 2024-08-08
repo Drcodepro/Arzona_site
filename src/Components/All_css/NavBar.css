@@ -151,9 +151,12 @@ display: none;
     .nav_container{
         padding:1rem 2rem;
     }
+    .nav_container a{
+        width: 100%;
+    }    
     .nav_navigation {
         width: 100%;
-        text-align: center;
+        text-align:start;
        
     }
 
@@ -190,7 +193,7 @@ display: none;
         align-items:start;
         justify-content: space-evenly;
         gap: 0.3rem;
-        background-color: rgba(0, 0, 0, 0.881); 
+        background-color: rgba(0, 0, 0, 0.932); 
         border: solid 1px rgb(141, 55, 226);
         border-top-left-radius: 1rem;
         border-bottom-left-radius: 1rem;
